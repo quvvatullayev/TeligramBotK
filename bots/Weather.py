@@ -48,18 +48,17 @@ while True:
         bot.sendMessage(chat_id, 'Xush kelibsiz')
         s = update_id
 
-    elif l != None:
+    elif l != None and s != update_id:
         lat = str(l.latitude)
         lon = str(l.longitude)
         API_key = os.environ['API_key']
 
-        if s != update_id and lat != None and lon != None:
-            d = weather(lat, lon, API_key)
-            text = dataText(d)
-            bot.sendMessage(chat_id, text)
-            telegramButtom(chat_id)
-            s = update_id
+        d = weather(lat, lon, API_key)
+        text = dataText(d)
+        bot.sendMessage(chat_id, text)
+        telegramButtom(chat_id)
+        s = update_id
 
     elif s != update_id:
-        bot.sendMessage(chat_id, 'So\'ralmagan malumotlarni kirittingiz')
+        bot.sendMessage(chat_id, 'So\'ralmagan malumot')
         s = update_id
