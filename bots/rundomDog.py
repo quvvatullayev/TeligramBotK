@@ -28,9 +28,10 @@ while True:
             url = 'https://aws.random.cat/meow'
             catJson = requests.get(url)
             catJson = catJson.json()
-            cat = catJson['url']
+            cat = catJson['file']
             bot.sendPhoto(chaId,cat)
             s = updetId
+            teligramButtom(chaId)
 
         elif text == 'start rundom 🐶':
             url = 'https://random.dog/woof.json'
@@ -39,7 +40,6 @@ while True:
             dog = dogJson['url']
             bot.sendPhoto(chaId,dog)
             s = updetId
-
-        teligramButtom(chaId)
+            teligramButtom(chaId)
 
         s = updetId
