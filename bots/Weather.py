@@ -27,11 +27,11 @@ def dataText(data):
     data_text = f"----ob-havo----\n\
     Davlat 🗽-----------{state},\n\
     Shaxart 🏙-----------{city},\n\
-    Kundizi ☀️---------{temp_max - 273}C,\n\
-    Kechasi 🌙---------{temp_min - 273}C,\n\
+    Kundizi ☀️---------{temp_max - 273}C🌡,\n\
+    Kechasi 🌙---------{temp_min - 273}C🌡,\n\
     shamol tezligi 💨---{speed}m/s,\n\
-    havo namligi-----{humidity},\n\
-    havo bosimi------{pressure}\n\
+    havo namligi 💦-----{humidity},\n\
+    havo bosimi 🎈------{pressure}\n\
     xabar beradi 🗣-----{base}".title()
 
     return data_text
