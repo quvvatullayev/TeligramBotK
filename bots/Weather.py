@@ -25,14 +25,14 @@ def dataText(data):
     temp_max = data['main']['temp_max']#pas harorat
 
     data_text = f"----ob-havo----\n\
-    Davlat-----------{state},\n\
-    Shaxat-----------{city},\n\
-    max temp---------{temp_max},\n\
-    min temp---------{temp_min},\n\
-    shamol tezligi---{speed},\n\
+    Davlat 🗽-----------{state},\n\
+    Shaxart 🏙-----------{city},\n\
+    Kundizi ☀️---------{temp_max - 273}C,\n\
+    Kechasi 🌙---------{temp_min - 273}C,\n\
+    shamol tezligi 💨---{speed}m/s,\n\
     havo namligi-----{humidity},\n\
     havo bosimi------{pressure}\n\
-    xabar beradi-----{base}".title()
+    xabar beradi 🗣-----{base}".title()
 
     return data_text
 
