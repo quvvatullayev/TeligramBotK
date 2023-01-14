@@ -1,1 +1,2 @@
-import telegram, os,json
+python-telegram-bot==13.13
+requests
